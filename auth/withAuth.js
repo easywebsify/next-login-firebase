@@ -10,9 +10,7 @@ const auth = firebase.auth();
 const withAuth = Component => props => {
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      if (authUser) {
-       
-      } else {
+      if (!authUser) {
         router.push('/signin');
       }
     });

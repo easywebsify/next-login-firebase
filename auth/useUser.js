@@ -13,7 +13,6 @@ import {
 initFirebase();
 
 export const mapUserData = async user => {
-  console.log('user: ', user);
   const { uid, email } = user;
   const token = await user.getIdToken(true);
   return {
