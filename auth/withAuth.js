@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import router from 'next/router';
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 import initFirebase from '../config';
 
 initFirebase();
